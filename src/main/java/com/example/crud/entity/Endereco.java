@@ -11,7 +11,8 @@ import org.intellij.lang.annotations.Pattern;
 @Getter
 @ToString
 public class Endereco {
-    @Pattern("\\d{5}-?\\d{3}")
+
+    @Pattern(value="\\d{5}-\\d{3}")
     private String cep;
     private String logradouro;
     private int numero;
